@@ -101,7 +101,7 @@
         <div class="col-sm-6 col-md-8">
           <div class="row g-5">
             <div class="col-md-7 col-lg-8">
-              <form class="" action="Ikrar_booking.php" method="GET">
+              <form class="" action="Ikrar_booking.php" method="post">
                 <div class="row g-3">
                 <div class="col-12">
                     <label for="nama" class="form-label">Name</label>
@@ -174,7 +174,7 @@
 
   <footer>
     <div class="card-footer text-muted">
-        <p class="footer"> < echo "Ikrar_1202200084" ?></p>
+        <p class="footer"> <?php echo "Ikrar_1202200084" ?></p>
       </div>
 </footer>
 </div>
