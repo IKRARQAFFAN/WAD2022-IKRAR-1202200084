@@ -87,7 +87,7 @@
 
 <main>
     <?php 
-    $name = "Ikrar_1202200084";
+    $nama = "Ikrar_1202200084";
     $date = isset($_GET['date']) ? $_GET['date'] : '';
     $time = isset($_GET['time']) ? $_GET['time'] : '';
     $days = isset($_GET['days']) ? $_GET['days'] : '';
@@ -126,7 +126,7 @@
   <tbody>
     <tr>
       <td><?php
-echo(rand() . "<br>");?></td>
+echo(rand . "<br>");?></td>
       <td><?php echo $name ?></td>
       <td><?php echo $date ?></td>
       <td><?php echo $time ?></td>

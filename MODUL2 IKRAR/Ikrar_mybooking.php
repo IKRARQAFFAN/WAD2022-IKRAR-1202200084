@@ -174,7 +174,7 @@
 
   <footer>
     <div class="card-footer text-muted">
-        <p class="footer"> <?php echo "Ikrar_1202200084" ?></p>
+        <p class="footer"> < echo "Ikrar_1202200084" ?></p>
       </div>
 </footer>
 </div>
