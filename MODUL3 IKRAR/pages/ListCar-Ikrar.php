@@ -1,5 +1,5 @@
 <?php
-require '../connector.php';
+require '../config/connector.php';
 
 $sqlquery = "SELECT * FROM showroom_Ikrar_table";
 $result = mysqli_query($connector, $sqlquery);
@@ -56,7 +56,7 @@ if (isset($_GET['pesan'])) {
     <div class="container">
       <div>
         <h1>My Show Room</h1>
-        <p>List Show Room Ikrar - 1202204248</p>
+        <p>List Show Room Ikrar - 1202200084</p>
         <div class="d-flex gap-5">
           <?php
           if ($checkrow > 0) {
