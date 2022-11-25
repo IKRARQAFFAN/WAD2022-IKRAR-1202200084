@@ -1,5 +1,5 @@
 <?php
-require '../config/connector.php';
+require '../connector.php';
 
 $sqlquery = "SELECT * FROM showroom_Ikrar_table";
 $result = mysqli_query($connector, $sqlquery);
