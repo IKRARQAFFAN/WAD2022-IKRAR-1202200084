@@ -47,7 +47,6 @@ if (isset($_GET['pesan'])) {
 </head>
 
 <body>
-  <!-- Nav -->
   <nav class="navbar navbar-expand navbar-dark bg-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>">
     <div class="container py-2">
       <?php if (isset($_SESSION["login"])) : ?>
@@ -75,9 +74,7 @@ if (isset($_GET['pesan'])) {
       <?php endif; ?>
     </div>
   </nav>
-  <!-- Nav End -->
 
-  <!-- Content -->
   <section id="list">
     <div class="container">
       <div>
@@ -107,15 +104,13 @@ if (isset($_GET['pesan'])) {
       </div>
     </div>
   </section>
-  <!-- Content End -->
 
-  <!-- footer -->
   <footer class="" style="padding-bottom: 50px;">
     <div class="container">
       <p style="font-family: 'Raleway'; font-style: normal; font-weight: 700; font-size: 16px; line-height: 19px; color: #757575;">Jumlah Mobil : <?php echo $checkrow ?></p>
     </div>
   </footer>
-  <!-- footer end -->
+
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
