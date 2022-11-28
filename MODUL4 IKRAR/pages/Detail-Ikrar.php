@@ -27,23 +27,22 @@ if (isset($_SESSION["login"])) {
 </head>
 
 <body>
-  <!-- Nav -->
-  <nav class="navbar navbar-expand navbar-dark bg-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>">
+  <nav class="navbar navbar-expand navbar-dark bg-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>">
     <div class="container py-2">
       <?php if (isset($_SESSION["login"])) : ?>
         <div class="navbar-nav">
           <a class="nav-link" style="color: white;" href="#home">Home</a>
-          <a class="nav-link" href="pages/List-Ikrar.php">MyCar</a>
+          <a class="nav-link" href="pages/ListCar-Ikrar.php">MyCar</a>
         </div>
         <div class="d-flex">
-          <a href="pages/Add-Ikrar.php" class="btn btn-light text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" role="button">Add Car</a>
+          <a href="pages/Add-Ikrar.php" class="btn btn-light text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" role="button">Add Car</a>
           <div class="dropdown ms-4">
-            <button class="btn btn-light dropdown-toggle text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-light dropdown-toggle text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?= $data_login["nama"]; ?>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" href="pages/Profile-Ikrar.php">Profile</a></li>
-              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" href="./config/logout.php">Log Out</a></li>
+              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" href="pages/Profile-Ikrar.php">Profile</a></li>
+              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" href="./config/logout.php">Log Out</a></li>
             </ul>
           </div>
         </div>
@@ -55,9 +54,7 @@ if (isset($_SESSION["login"])) {
       <?php endif; ?>
     </div>
   </nav>
-  <!-- Nav End -->
 
-  <!-- Form -->
   <section id='detail'>
     <div class="container">
       <?php
@@ -87,7 +84,7 @@ if (isset($_SESSION["login"])) {
                       <input type='radio' name='status' id='belum' value='Belum Lunas' " . (($getDetail["status_pembayaran"] == 'Belum Lunas') ? 'checked="checked"' : "") . " style='width: 15px; height: 15px; margin-right:10px;'>
                       <label for='belum' style='margin-top: 15px;'>Belum Lunas</label>
                     </span>
-                    <a href='Edit-Nama.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-primary' style='margin-top: 40px;'>Edit</a>
+                    <a href='Edit-Ikrar.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-primary' style='margin-top: 40px;'>Edit</a>
                   </form>
                 </div>
             ";
@@ -95,7 +92,6 @@ if (isset($_SESSION["login"])) {
       ?>
     </div>
   </section>
-  <!-- Form End -->
 
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

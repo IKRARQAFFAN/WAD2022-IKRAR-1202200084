@@ -32,7 +32,7 @@ function cekdb($result) {
   </head>
   <body>
 
-  <nav class="navbar navbar-expand navbar-dark bg-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>">
+  <nav class="navbar navbar-expand navbar-dark bg-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>">
     <div class="container py-2">
       <?php if (isset($_SESSION["login"])) : ?>
         <div class="navbar-nav">
@@ -40,14 +40,14 @@ function cekdb($result) {
           <a class="nav-link" href="./pages/ListCar-Ikrar.php">MyCar</a>
         </div>
         <div class="d-flex">
-          <a href="./pages/Add-Ikrar.php" class="btn btn-light text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" role="button">Add Car</a>
+          <a href="./pages/Add-Ikrar.php" class="btn btn-light text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" role="button">Add Car</a>
           <div class="dropdown ms-4">
-            <button class="btn btn-light dropdown-toggle text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-light dropdown-toggle text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?= $data_login["nama"]; ?>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" href="./pages/Profile-Ikrar.php">Profile</a></li>
-              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?>" href="./config/logout.php">Log Out</a></li>
+              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" href="./pages/Profile-Ikrar.php">Profile</a></li>
+              <li><a class="dropdown-item text-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "primary"; ?>" href="./config/logout.php">Log Out</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +73,7 @@ function cekdb($result) {
               <p style="margin-top: 20px; font-size:14px;">Ikrar_1202200084</p>
             </div>
           </div>
-          <img src="<?php echo "asset/images/car1.png" ?>" alt="car">
+          <img src="<?php echo "asset/images/car1.jpg" ?>" alt="car">
         </div>
       </div>
     </section>
@@ -83,14 +83,14 @@ function cekdb($result) {
       <div class="container">
         <div class="d-flex gap-5 bungkus justify-content-center align-items-center">
           <div>
-            <h1>Selamat Datang<br /> Di Show Room</h1>
-            <p class="mt-3">Showroom ini bergerak dalam bidang jual-beli mobil.<br /> Anda dapat menikmati puasnya berbelanja bersama kami. </p>
+            <h1>Selamat Datang<br /> Di Show Room Ikrar</h1>
+            <p class="mt-3">Berbekal pengalaman panjang yang didukung dengan sumber daya dan pabrik berstandar internasional, kami menghadirkan produk terbaik mulai dari kendaraan, mesin, komponen kendaraan, dan alat produksi.</p>
             <div class="d-flex align-items-center gap-5 mt-5">
               <img src="<?php echo "asset/images/logo-ead.png" ?>" alt="logoead" style="width:100px;">
               <p style="margin-top: 20px; font-size:14px;">Ikrar_1202200084</p>
             </div>
           </div>
-          <img src="<?php echo "asset/images/car1.png" ?>" alt="car">
+          <img src="<?php echo "asset/images/car1.jpg" ?>" alt="car">
         </div>
       </div>
     </section>

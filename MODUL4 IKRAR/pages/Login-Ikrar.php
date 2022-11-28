@@ -34,9 +34,6 @@ if (isset($_POST["login"])) {
         }
     }
 }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -58,24 +55,24 @@ if (isset($_POST["login"])) {
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6 min-vh-100 left">
-                    <img src="../asset/images/mobil.jpeg" style="object-fit:fill; width:100%; height:100%;" alt="foto">
+                    <img src="../asset/images/rangerover.jpeg" style="object-fit:fill; width:100%; height:100%;" alt="foto">
                 </div>
                 <div class="col-md-6">
                     <div class="form-login m-auto ps-5">
                         <h2 class="fw-bold mb-4">Login</h2>
                         <form action="" method="post">
-                            <!-- Email input -->
+
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="email">Email address</label>
                                 <input type="email" id="email" class="form-control form-control-lg" name="email" placeholder="masukan email" value="<?= isset($_COOKIE["email"]) ? $_COOKIE["email"] : ""; ?>" />
                             </div>
-                            <!-- Password input -->
+
                             <div class="form-outline mb-3">
                                 <label class="form-label" for="password">Password</label>
                                 <input type="password" id="password" class="form-control form-control-lg" name="password" placeholder="masukan password" value="<?= isset($_COOKIE["password"]) ? $_COOKIE["password"] : ""; ?>" />
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <!-- Checkbox -->
+
                                 <div class="form-check mb-0">
                                     <input class="form-check-input me-2" type="checkbox" value="" id="check" name="check" />
                                     <label class="form-check-label" for="check">
@@ -87,7 +84,7 @@ if (isset($_POST["login"])) {
 
                             <div class="text-center text-lg-start mt-4 pt-2">
                                 <button type="submit" class="btn btn-primary btn-lg" name="login" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                                <p class="small fw-bold mt-2 pt-1 mb-0">belum punya akun <a href="Register-Ikrar.php" class="link-primary">Daftar</a></p>
+                                <p class="small fw-bold mt-2 pt-1 mb-0">Anda belum punya akun? <a href="Register-Ikrar.php" class="link-primary">Daftar</a></p>
                             </div>
                         </form>
                     </div>

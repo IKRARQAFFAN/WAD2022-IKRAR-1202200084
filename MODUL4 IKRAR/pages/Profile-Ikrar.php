@@ -2,12 +2,11 @@
 require "../config/connector.php";
 session_start();
 
-$pilihan_warna = [
+$warna = [
     "danger" => "Red",
     "warning" => "Yellow",
     "success" => "Green",
     "primary" => "Blue",
-
 ];
 
 if (isset($_SESSION["login"])) {
