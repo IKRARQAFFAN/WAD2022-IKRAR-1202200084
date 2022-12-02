@@ -9,7 +9,7 @@ $warna = [
     "primary" => "Blue",
 ];
 
-if (isset($_SESSION["login"])) {
+if (isset(["login"])) {
     $login_as = $_SESSION["email"];
     $result_login = mysqli_query($connector, "SELECT * FROM user_Ikrar WHERE email = '$login_as'");
     $data_login = mysqli_fetch_assoc($result_login);

@@ -4,7 +4,6 @@ require './config/connector.php';
 $query = "SELECT * FROM showroom_Ikrar_table";
 $result = mysqli_query($connector, $query);
 
-session_start();
 if (isset($_SESSION["login"])) {
   $login_as = $_SESSION["email"];
   $result_login = mysqli_query($connector, "SELECT * FROM user_Ikrar WHERE email = '$login_as'");
