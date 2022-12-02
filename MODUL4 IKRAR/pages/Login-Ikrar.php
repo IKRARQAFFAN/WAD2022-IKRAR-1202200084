@@ -1,7 +1,7 @@
 <?php
 require "../config/connector.php";
 session_start();
-if (isset(["email"]) && isset($_COOKIE["password"])) {
+if (isset($_COOKIE["email"]) && isset($_COOKIE["password"])) {
     $email = $_COOKIE["email"];
     $password = $_COOKIE["password"];
     $result = mysqli_query($connector, "SELECT * FROM user_Ikrar WHERE email = '$email'");
