@@ -17,12 +17,12 @@ if (isset($_POST["login"])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $query = mysqli_query($connector, "SELECT * FROM user_Ikrar WHERE email='$email'");
-    //cek email  
+ 
     if (mysqli_num_rows($query) === 1) {
-        //cek password
+
         $data = mysqli_fetch_assoc($query);
         if (password_verify($password, $data["password"])) {
-            // set seesion
+
             $_SESSION["login"] = true;
             $_SESSION["email"] = $data["email"];
             header("Location: ../index.php");
