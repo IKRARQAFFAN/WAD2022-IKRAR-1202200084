@@ -97,3 +97,43 @@ if (isset($_POST["update"])) {
                             <input type="text" class="form-control text-muted" id="no_hp" name="no_hp" value="<?= $data_login["no_hp"]; ?>">
                         </div>
                     </div>
+                    <hr>
+                    <div class="mb-3 row position-relative">
+                        <label for="password" class="col-sm-2 col-form-label text-muted">Kata Sandi</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control text-muted" id="password" name="password" placeholder="Kata Sandi">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="konfimasi_password" class="col-sm-2 col-form-label text-muted">Konfirmasi Kata Sandi</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control text-muted" id="password2" name="password2" placeholder="Konfirmasi Kata Sandi">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="warna_navbar" class="col-sm-2 col-form-label text-muted">Warna Navbar</label>
+                        <div class="col-sm-10">
+                            <select class="form-select text-muted" aria-label="Warna Navbar" id="warna_navbar" name="warna_navbar">
+                                <?php foreach ($colour as $warna => $value) : ?>
+                                    <?php $selected = $warna == $_COOKIE["warna_navbar"] ? "selected" : "" ?>
+                                    <option value="<?= $warna; ?>" <?= $selected; ?>><?= $value; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-<?= isset($_COOKIE["warna_navbar"])  ? $_COOKIE["warna_navbar"] : "success"; ?> px-4 button" name="update">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex align-items-center logo-ead">
+            <img src="../asset//images//logo-ead.png" alt="Logo EAD" width="100">
+            <span class="ms-5 text-muted">Ikrar_1202200084</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
