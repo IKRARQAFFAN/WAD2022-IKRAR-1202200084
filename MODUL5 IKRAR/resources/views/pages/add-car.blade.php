@@ -62,7 +62,7 @@
                 {{ $message }}
             </div>
         @enderror
-        <button type="submit" class="btn btn-primary" style="margin-top: 40px;">Simpan</button>
+        <button type="submit" class="btn btn-primary" style="margin-top: 40px;">Selesai</button>
       </form>
     </div>
   </section>

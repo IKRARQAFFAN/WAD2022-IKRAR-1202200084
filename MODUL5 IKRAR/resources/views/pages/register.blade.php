@@ -58,7 +58,7 @@ function showSuccess($success)
     <div class="col-6">
         <div class="bg-image" 
         style="background-image: url('{{ asset('component/images/rangerover.jpeg') }} ');
-        height: 100vh;
+        height: 200vh;
         background-position: center;
         background-repeat: no-repeat">
         </div>

@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<!-- Jumbotron -->
+
 <section id="home">
     <div class="container">
       <div class="d-flex justify-content-center align-items-center mt-5">
@@ -14,12 +14,12 @@
           @endif
           <div class="d-flex align-items-center gap-5 mt-5">
             <img src="{{ asset('component/images/logo-ead.png') }}" alt="logoead" style="width:100px;">
-            <p style="margin-top: 20px; font-size:14px;">Ikrar_1202200084</p>
+            <p style="margin-top: 20px; font-size:14px;">IKRAR_1202200084</p>
           </div>
         </div>
-        <img src="{{ asset('component/images/pajero.png') }}" alt="mobil">
+        <img src="{{ asset('component/images/car1.jpg') }}" alt="mobil">
       </div>
     </div>
   </section>
-  <!-- Jumbotron End -->
+
 @endsection

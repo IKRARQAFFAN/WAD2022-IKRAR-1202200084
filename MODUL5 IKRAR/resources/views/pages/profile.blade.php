@@ -67,7 +67,6 @@ function showSuccess($success)
                 <label class="col-sm-2 col-form-label">Warna Navbar<span class="text-danger">*</span></label>
                 <div class="col-sm-10">
                     <select name="warna" class="form-control" id="warna">
-                        <option value="">-Choose Navbar Color-</option>
                         <option value="blue" {{ (Cookie::get('warna_navbar') == 'blue' ? 'selected' : '') }}>Blue</option>
                         <option value="red" {{ (Cookie::get('warna_navbar') == 'red' ? 'selected' : '') }}>Red</option>
                         <option value="yellow" {{ (Cookie::get('warna_navbar') == 'yellow' ? 'selected' : '') }}>Yellow</option>
