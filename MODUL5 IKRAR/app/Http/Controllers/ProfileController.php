@@ -83,7 +83,7 @@ class ProfileController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function updat(Request $request, $id)
     {
         if(Session::get('login') != true)
         {
